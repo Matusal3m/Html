@@ -1,17 +1,9 @@
-function tocacensura() {
-    document.querySelector('#weed').play();
-    let video = document.getElementById('maconha');
-    video.style.display = 'block';
-    video.play();
-    video.addEventListener('ended', function() {
-        video.style.display = 'none';
-    });
+function buttonClicked(id_audio, id_video) {
 
-}
-
-function tocageme() {
-    document.querySelector('#som_geme').play();
-    let video = document.getElementById('geme');
+    let audio = document.getElementById(id_audio);
+    let video = document.getElementById(id_video);
+    
+    audio.play();
     video.style.display = 'block';
     video.play();
     video.addEventListener('ended', function() {
@@ -19,66 +11,13 @@ function tocageme() {
     });
 }
 
-function tocaromantic() {
-    document.querySelector('#romantic').play();
-    let video = document.getElementById('romantico');
-    video.style.display = 'block';
-    video.play();
-    video.addEventListener('ended', function() {
-        video.style.display = 'none';
-    });
-}
+function buttonMundial(id_audio, id_video) {
+    let audio = document.getElementById(id_audio);
+    audio.play();
+    let img = document.getElementById(id_video);
+    img.style.display = 'block';
+    audio.addEventListener('ended', function(){
+        img.style.display = 'none';
+    })
 
-function tocakawasaki() {
-    document.querySelector('#som_kawasaki').play();
-    let video = document.getElementById('kawazaki');
-    video.style.display = 'block';
-    video.play();
-    video.addEventListener('ended', function() {
-        video.style.display = 'none';
-    });
-}
-
-function tocalaele() {
-    document.querySelector('#som_laele').play();
-    let video = document.getElementById('video_laele');
-    video.style.display = 'block';
-    video.play();
-    video.addEventListener('ended', function() {
-        video.style.display = 'none';
-    });
-}
-
-function tocacavalo() {
-    document.querySelector('#som_cavalo').play();
-    let video = document.getElementById('cavalo');
-    video.style.display = 'block';
-    video.play();
-    video.addEventListener('ended', function() {
-        video.style.display = 'none';
-    });
-}
-
-function tocafilho() {
-    document.querySelector('#som_filho').play();
-    let video = document.getElementById('queissomeufi');
-    video.style.display = 'block';
-    video.play();
-    video.addEventListener('ended', function() {
-        video.style.display = 'none';
-    });
-}
-
-function tocauepa() {
-    document.querySelector('#som_uepa').play();
-    let video = document.getElementById('uepa');
-    video.style.display = 'block';
-    video.play();
-    video.addEventListener('ended', function() {
-        video.style.display = 'none';
-    });
-}
-
-function tocamundial() {
-    document.querySelector('#som_mundial').play();
 }

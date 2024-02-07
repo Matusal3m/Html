@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>PP</title>
-
-    <script src="gêese.js"></script>
 </head>
 <body>
     <section id="container">
 
-        <button onclick="tocacensura()" class="tecla_maconha">Maconha</button>
-        <button onclick="tocageme()" class="tecla_geme">Geme</button>
-        <button onclick="tocaromantic()" class="tecla_romantica">Romantic</button>
-        <button onclick="tocakawasaki()" class="tecla_kwasaki">Kawasaki</button>
-        <button onclick="tocalaele()" class="tecla_laele">LáEle</button>
-        <button onclick="tocacavalo()" class="tecla_cavalo">Cavalo</button>
-        <button onclick="tocamundial()" class="tecla">Palmeiras</button>
-        <button onclick="tocafilho()" class="tecla">Qissomeufih</button>
-        <button onclick="tocauepa()" class="tecla">Uepa</button>
+        <button onclick="buttonClicked('som_olha_a', 'video_olha_a')" class="tecla_olha_a">Olha a</button>
+        <button onclick="buttonClicked('som_geme', 'geme')" class="tecla_geme">Gme</button>
+        <button onclick="buttonClicked('romantic', 'romantico')" class="tecla_romantica">Romantic</button>
+        <button onclick="buttonClicked('som_kawasaki', 'kawazaki')" class="tecla_kwasaki">Kawasaki</button>
+        <button onclick="buttonClicked('som_laele', 'video_laele')" class="tecla_laele">LáEle</button>
+        <button onclick="buttonClicked('som_cavalo', 'cavalo')" class="tecla_cavalo">Cavalo</button>
+        <button onclick="buttonMundial('som_mundial', 'mundial')" class="tecla">Palmeiras</button>
+        <button onclick="buttonClicked('som_filho', 'queissomeufi')" class="tecla">Qissomeufih</button>
+        <button onclick="buttonClicked('som_uepa', 'uepa')" class="tecla">Uepa</button>
 
     </section>
 
@@ -29,12 +27,10 @@
     <audio src="sounds/kawasaki.mp3" id="som_kawasaki"></audio>
     <audio src="sounds/la-ele.mp3" id="som_laele"></audio>
     <audio src="sounds/musica-romantica.mp3" id="romantic"></audio>
-    <audio src="sounds/olha-a-censura.mp3" id="weed"></audio>
+    <audio src="sounds/olha-a-censura.mp3" id="som_olha_a"></audio>
     <audio src="sounds/meufilho.mp3" id="som_filho"></audio>
     <audio src="sounds/uepa.mp3" id="som_uepa"></audio>
     <audio src="sounds/mundial.mp3" id="som_mundial"></audio>
-
-
 
     <div id="television_container">
 
@@ -43,20 +39,23 @@
 
         <div id="antenna"></div>
         <div id="television">
-                <div id="screen">
+            <div id="screen">
                     <video muted src="videos/cavalo.mp4" id="cavalo"></video>
                     <video muted src="videos/geme.mp4" id="geme"></video>
                     <video muted src="videos/kawazaki.mp4" id="kawazaki"></video>
                     <video muted src="videos/laele.mp4" id="video_laele"></video>
-                    <video muted src="videos/maconha.mp4" id="maconha"></video>
+                    <video muted src="videos/maconha.mp4" id="video_olha_a"></video>
                     <video muted src="videos/queissomeufi.mp4" id="queissomeufi"></video>
                     <video muted src="videos/romantic.mp4" id="romantico"></video>
                     <video muted src="videos/uepa.mp4" id="uepa"></video>
+                    <img src="images/images.jpeg" alt="" id="mundial">
                 </div>
         </div>
         <div id="television_stander_right"></div>
         <div id="television_stander_left"></div>
     </div>
 
+    <script src="gêese.js"></script>
+    
 </body>
 </html>
